@@ -15,7 +15,19 @@
     <script data-silex-static="" type="text/javascript" src="//editor.silex.me/static/2.6/front-end.js"></script>
 
     <style type="text/css" class="silex-style"></style>
-    <script type="text/javascript" class="silex-script"></script>
+    <script type="text/javascript" class="silex-script">
+        function playSound() {
+            try {
+                var url = "http://www.javascriptkit.com/script/script2/whistle.ogg"
+                var snd = new Audio(url);
+                snd.play()
+            } catch(e) {}
+        }
+        $(function() {
+            $('.sound-on-click').click(playSound);
+            $('.sound-on-hover').hover(playSound, function(){});
+        })
+    </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
             background-color: rgba(38,38,38,1); 
@@ -124,12 +136,14 @@
     <meta name="publicationPath" content="/api/1.0/github/exec/put/PRACTICA_FINAL/master">
 
 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport="">
+    <link href="../../../../../../../haremos%20como%20si.jpg" rel="shortcut icon">
+    <meta name="description" content="Realización de una Web que aúne conocimientos procedentes del área de la Narrativa Audiovisual con los propios de la Historia del Arte">
+
     <style id="current-page-style">
         .page-inicio{display:inherit; }
     </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport="">
-    <link href="haremos%20como%20si.jpg" rel="shortcut icon">
-    <meta name="description" content="Realización de una Web que aúne conocimientos procedentes del área de la Narrativa Audiovisual con los propios de la Historia del Arte">
     <!-- Silex HEAD tag do not remove -->
     <!-- End of Silex HEAD tag do not remove -->
 </head>
@@ -140,6 +154,7 @@
             <img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII="
             class="silex-element-content">
         </div>
+
 
         <a id="page-inicio" data-silex-type="page" class="page-element page-link-active">INICIO</a><a id="page-mri" data-silex-type="page" class="page-element">MRI</a><a id="page-arte-y-ensayo" data-silex-type="page" class="page-element">ARTE Y ENSAYO</a>
         <a
@@ -232,6 +247,8 @@
     <div data-silex-type="image" class="editable-style silex-id-1478432947570-39 image-element page-arte-y-ensayo paged-element" data-silex-id="silex-id-1478432947570-39" style=""><img src="ocho-y-medio-2.jpg" class="silex-element-content"></div>
     <div data-silex-type="image" class="editable-style silex-id-1478433261604-43 image-element page-cine-sovi-tico paged-element" data-silex-id="silex-id-1478433261604-43" style=""><img src="ivan-grozny-2.jpg" class="silex-element-content"></div>
     <div data-silex-type="image" class="editable-style silex-id-1478433434523-44 image-element page-cine-experimental paged-element" data-silex-id="silex-id-1478433434523-44" style=""><img src="b8016a51176c5affe7ae65aa38c2fad7.jpg" class="silex-element-content"></div>
+
+
 </body>
 
 </html>
