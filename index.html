@@ -26,25 +26,7 @@
             transition: opacity .5s, top 0s .5s;
         }
     </style>
-    <script type="text/javascript" class="silex-script">
-        $(function() {
-    // auto play all pages
-    var idx = 0;
-    var pages = $('.page-element');
-    setInterval(function() {
-        idx++;
-        if(idx >= pages.length) idx = 0;
-        var pageElement = pages.get(idx);
-        window.location.hash= '#!' + pageElement.id;
-    }, 50);
-})
-
-$(function() {
-    setTimeout(function() {
-        $('body').addClass('loaded');
-    }, 0);
-})
-    </script>
+    <script type="text/javascript" class="silex-script"></script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
             background-color: rgba(38,38,38,1); 
